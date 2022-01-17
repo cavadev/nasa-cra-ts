@@ -17,7 +17,7 @@ The following wireframes show a high-level representation of the content and use
 
 - Create React App (ReactJS 17 + Typescript 4.5)
 - React Router v6
-- MUI v5 (formerly Material-UI)
+- MUI v5 (formerly Material-UI, which use Emotion as CSS-in-JS solution)
 - @testing-library + Jest
 
 ## Pending improvements
@@ -27,6 +27,7 @@ The following wireframes show a high-level representation of the content and use
 - Pagination (using the "page" param in the search endpoint of the Nasa API).
 - Check Accessibility.
 - Add a player in the multimedia assets (audio/video).
+- CI (Github Actions).
 
 ## Create React App Available Scripts
 
