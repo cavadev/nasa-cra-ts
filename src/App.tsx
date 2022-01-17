@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 
-function App() {
+import { AppBar, Box, Toolbar, Typography } from '@mui/material';
+
+import SearchPage from './pages/Search'
+import AssetPage from './pages/Asset';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Box sx={{ flexGrow: 1 }}>
+          <AppBar position="static">
+            <Toolbar>
+              <Link to="/">
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                  Nasa
+                </Typography>
+              </Link>
+            </Toolbar>
+          </AppBar>
+        </Box>
+        <Routes>
+          <Route path="/" element={<SearchPage />} />
+          <Route path="/asset/:id" element={<AssetPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

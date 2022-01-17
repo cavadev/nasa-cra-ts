@@ -1,8 +1,34 @@
-# Getting Started with Create React App
+# Nasa Image and Audio Library (Front End Technical Challenge)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Brief
 
-## Available Scripts
+Develop a web application that integrates with the [NASA Image and Video Library API](https://images.nasa.gov/). It should allow users to **search for assets** and then **select and view an asset**.
+
+The following wireframes show a high-level representation of the content and user flow:
+
+![Wireframes](./wireframes.png)
+
+### Docs
+
+- https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf
+- https://images.nasa.gov (website)
+
+## Tools, libraries and frameworks used
+
+- Create React App (ReactJS 17 + Typescript 4.5)
+- React Router v6
+- MUI v5 (formerly Material-UI)
+- @testing-library + Jest
+
+## Pending improvements
+
+- Fix the test cases that are failing (possibly related with the v6 of React Router).
+- Create a MUI theme for the project and add Animation.
+- Pagination (using the "page" param in the search endpoint of the Nasa API).
+- Check Accessibility.
+- Add a player in the multimedia assets (audio/video).
+
+## Create React App Available Scripts
 
 In the project directory, you can run:
 
@@ -28,19 +54,3 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
